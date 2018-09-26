@@ -69,6 +69,8 @@ body {
 	display: grid;
 	grid-gap: 20px;
 	grid-template-columns: repeat(3, 1fr);
+	text-align: center;
+	margin-left: 19%;
 }
 
 .grid-3 {
@@ -90,4 +92,47 @@ body {
 .bg-dark {
 	background: #333;
 	color: #f4f4f4;
+}
+
+footer {
+	padding: 2.2rem;
+}
+
+footer p {
+	margin: 0;
+
+}
+
+@media(max-width: 560px) {
+.showcase::after {
+	height: 50vh;
+}
+ .content {
+ 	top: 5%;
+ 	margin-top: 5px;
+ }
+
+ .content .text {
+ 	display: none;
+ }
+ .grid-3
+ .grid-2 {
+ 	grid-template-columns: 1fr;
+ }
+  .services div {
+     border-bottom: #333 dashed 1px;
+     padding: 1.2rem 1rem;
+  }
+}
+
+/* landscape */
+@media(max-height: 500px) {
+	.content .title, .content .text {
+		display: none;
+	}
+
+	.content {
+		top: 5%;
+	}
+
 }
