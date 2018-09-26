@@ -62,5 +62,32 @@ body {
 	margin: auto;
 	overflow: hidden;
 	padding: 4rem 1rem;
-	
+
+}
+
+.grid-2 {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-3 {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.center {
+	text-align: center;
+	margin: auto;
+}
+
+.bg-light {
+	background: #f4f4f4;
+	color: #333;
+}
+
+.bg-dark {
+	background: #333;
+	color: #f4f4f4;
 }
